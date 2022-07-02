@@ -1,0 +1,55 @@
+body {
+  background-color: #111;
+}
+.img-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.single-img {
+  padding: 1.5rem;
+}
+
+.gall-img {
+  float: left;
+  width: 265px;
+  height: 200px;
+  object-fit: cover;
+}
+.gall-img:hover {
+  transition: 0.4s ease-in-out;
+  transform: scale(1.1);
+  border-radius: 2rem;
+  border: solid 5px white;
+}
+
+.center {
+  text-align: center;
+}
+
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: white;
+  float: left;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border: 1px solid #ddd;
+  margin: 0 15px;
+}
+
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  border: 1px solid #4caf50;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
